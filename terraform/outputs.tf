@@ -29,3 +29,7 @@ output "site_url_apex" {
 output "site_url_www" {
   value = "https://www.${var.domain_name}"
 }
+
+output "github_deploy_role_arn" {
+  value = aws_iam_role.github_deploy.arn
+}
