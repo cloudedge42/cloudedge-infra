@@ -1,0 +1,23 @@
+# Terraform working directory
+.terraform/
+
+# Terraform state files (never commit state)
+*.tfstate
+*.tfstate.*
+
+# Crash logs
+crash.log
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform lock file (OPTIONAL decision)
+# Comment this out if you WANT to commit the lock file
+# .terraform.lock.hcl
+
+# Ignore all tfvars except prod.tfvars
+*.tfvars
+!prod.tfvars
